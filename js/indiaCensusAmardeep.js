@@ -13,7 +13,7 @@ let convert = function(year) {
 		let arr = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
 		if (arr[4] === 'Total' && arr[5] !== 'All ages') {
 			let obj = {};
-			if (final[count]) {
+			if (!final[count]) {
 				obj['AgeGroup'] = arr[5];
 				obj['LiteratePerson'] = parseInt(arr[12], 10);
 				final.push(obj);
