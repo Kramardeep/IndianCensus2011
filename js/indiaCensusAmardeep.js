@@ -2,6 +2,7 @@ const readline = require('readline');
 const fs = require('fs');
 const log4js = require('log4js');
 let convert = function(year) {
+	log4js.configure("log4js.conf.json");
 	const logger = log4js.getLogger();
 	// registering csv file as input to readline interface
 	const rl = readline.createInterface({

@@ -1,4 +1,4 @@
-
+{
   "appenders": [{
     "type": "console",
     "layout": {
